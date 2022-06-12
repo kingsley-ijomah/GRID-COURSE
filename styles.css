@@ -1,16 +1,17 @@
 .container {
-  max-width: 1000px;
-  height: 400px;
+  max-width: 1200px;
+  height: 800px;
   border: 2px blue dotted;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: minmax(200px, 500px) repeat(2, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: 250px;
   grid-gap: 5px;
 }
 
 .child {
   background-color: lightgray;
+  height: 250px;
 }
